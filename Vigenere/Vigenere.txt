@@ -1,0 +1,32 @@
+// Henrique Cury
+// CIS3360
+// Spring 2018
+
+1. Explanation
+The Vigenere code works by taking the argv[1] (the text file)
+and looping through until the end of file(EOF). Using tolower and
+isalpha we can get rid of any characters that are uppercased or
+is a special character respectively. Once that is done, we can proceed
+and use arithmetic:
+
+``
+// testChar = temp;
+// value = testChar - 97;
+// key_int = IV[i % blockSize] - 97;
+// testChar = (value + key_int) % 26 + 97;
+// key_int = key[i % blockSize] - 97;
+// value = testChar - 97;
+// testChar = (value + key_int) % 26 + 97;
+// IV[i % blockSize] = testChar;
+// array[i] = testChar;
+``
+
+We then print out character by character. The problem with printing out character
+by character is that I could not figure out how to decrypt character by character.
+I tried to call the strcat function but had no success as I kept receiving a Seg
+Fault.
+
+
+2. Compiling and Executing
+To run the code you must input a file as the command argument [1]. After that goes
+the key in argument[2] followed by the initial vector in argument[3].

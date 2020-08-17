@@ -1,0 +1,6 @@
+For this project, once CIS.c is compiled
+you must output ./a.out <filename> <hash>.
+argv[1] is the filename and argv[2] is the hash
+value. To output the the dictionary simply run it like this:
+./a.out password.txt ### > <name of choice>.txt
+This will output the results to a file.
